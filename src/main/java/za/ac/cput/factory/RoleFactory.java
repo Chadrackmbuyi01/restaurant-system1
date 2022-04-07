@@ -6,6 +6,14 @@
 
 package za.ac.cput.factory;
 
+import za.ac.cput.entity.Role;
+
 public class RoleFactory {
 
+    public static Role createRole(int roleId, String roleName){
+        return new Role.Builder().setRoleId(roleId)
+                .setRoleName(roleName)
+                .build();
+
+    }
 }
