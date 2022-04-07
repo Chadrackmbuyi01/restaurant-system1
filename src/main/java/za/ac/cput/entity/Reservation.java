@@ -34,13 +34,7 @@ public class Reservation {
         this.reserveName = reserveName;
     }
 
-    @Override
-    public String toString() {
-        return "Reservation{" +
-                "reserveId=" + reserveId +
-                ", reserveName='" + reserveName + '\'' +
-                '}';
-    }
+
 
     public static class Builder {
         private int reserveId ;
