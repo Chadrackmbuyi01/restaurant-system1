@@ -1,3 +1,9 @@
+/* RoleFactoryTest.java
+   RoleFactoryTest for Restaurant system
+   Author: Marcia Zanele Bika (211054356)
+   Date: 07 April 2022
+ */
+
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
