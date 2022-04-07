@@ -1,3 +1,10 @@
+/**
+ * PaymentFactory.java
+ * Payment Factory for Payment Entity in Restaurant System
+ * Author: Uwais Ali Rawoot (216217296)
+ * Date: 07 April 2022
+ */
+
 package za.ac.cput.factory;
 
 import za.ac.cput.entity.Payment;
