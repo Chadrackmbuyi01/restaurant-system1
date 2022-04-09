@@ -1,3 +1,13 @@
+/* Customer.java
+   Entity for Customer
+   Author: Ismail Watara
+   Student Number: 219018790
+   Date: March 2022
+*/
+
+
+
+
 package za.ac.cput.entity;
 
 public class Customer {

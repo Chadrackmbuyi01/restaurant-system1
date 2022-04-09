@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="restaurant-system" options="--add-modules java.base" />
+      <module name="restaurant-system" options="" />
     </option>
   </component>
 </project>
