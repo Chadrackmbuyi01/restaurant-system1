@@ -1,3 +1,10 @@
+/**
+ * MenuRepository.java
+ * Menu Repository class in Restaurant System
+ * Author: Uwais Ali Rawoot (216217296)
+ * Date: 09 April 2022
+ */
+
 package za.ac.cput.repository;
 
 import za.ac.cput.entity.Menu;
@@ -20,6 +27,7 @@ public class MenuRepository implements IMenuRepository{
         return menuRepository;
     }
 
+    //adding create method
     @Override
     public Menu create (Menu menuItem){
         boolean success = menuDB.add(menuItem);
@@ -28,6 +36,7 @@ public class MenuRepository implements IMenuRepository{
         return menuItem;
     }
 
+    //adding read method
     @Override
     public Menu read (String menuId){
         Menu menu = menuDB.stream()
@@ -37,6 +46,7 @@ public class MenuRepository implements IMenuRepository{
         return menu;
     }
 
+    //adding update method
     @Override
     public Menu update(Menu menuItem){
         Menu oldMenuItem = read(menuItem.getMenuItem());
@@ -48,6 +58,7 @@ public class MenuRepository implements IMenuRepository{
         return null;
     }
 
+    //adding delete method
     @Override
     public boolean delete(String menuItem){
         Menu menuItemToDelete = read((menuItem));
@@ -56,6 +67,8 @@ public class MenuRepository implements IMenuRepository{
         menuDB.remove(menuItemToDelete);
         return true;
     }
+
+    //adding get all method
     @Override
     public Set<Menu> getAll(){
         return menuDB;
