@@ -11,7 +11,7 @@ class DeliveryFactoryTest {
 
     @Test
     public void test(){
-        Delivery delivery = DeliveryFactory.createDelivery("456789","89");
+        Delivery delivery = DeliveryFactory.createDelivery("89Y","8P");
         assertNotNull(delivery);
 
     }

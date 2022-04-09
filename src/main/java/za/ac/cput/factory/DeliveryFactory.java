@@ -16,8 +16,8 @@ import java.util.UUID;
 public class DeliveryFactory {
 
     public static Delivery createDelivery(String deliveryId, String orderId){
-        return new Delivery.Builder().setDeliveryId(Integer.parseInt(deliveryId))
-                .setOrderId(Integer.parseInt(orderId))
+        return new Delivery.Builder().setDeliveryId(deliveryId)
+                .setOrderId(orderId)
                 .build();
 
 

@@ -9,43 +9,47 @@ package za.ac.cput.entity;
 
 
 public class Driver {
-    private Integer DriverId ;
-    private Integer DeliveryId ;
-    private Integer OrderId ;
+    private String DriverId ;
+    private String DeliveryId ;
+    private String OrderId ;
     private String DriverName;
 
     //private constructor
-    private Driver(Builder builder){
+    Driver(Builder builder){
         this.DriverId = builder.DriverId;
         this.DeliveryId = builder.DeliveryId;
         this.OrderId = builder.OrderId;
         this.DriverName = builder.DriverName;
     }
 
+    public Driver() {
+
+    }
+
     // Getters and setters
 
 
-    public Integer getDriverId() {
+    public String getDriverId() {
         return DriverId;
     }
 
-    public void setDriverId(Integer driverId) {
+    public void setDriverId(String driverId) {
         DriverId = driverId;
     }
 
-    public Integer getDeliveryId() {
+    public String getDeliveryId() {
         return DeliveryId;
     }
 
-    public void setDeliveryId(Integer deliveryId) {
+    public void setDeliveryId(String deliveryId) {
         DeliveryId = deliveryId;
     }
 
-    public Integer getOrderId() {
+    public String getOrderId() {
         return OrderId;
     }
 
-    public void setOrderId(Integer orderId) {
+    public void setOrderId(String orderId) {
         OrderId = orderId;
     }
 
@@ -57,34 +61,37 @@ public class Driver {
         DriverName = driverName;
     }
 
+    //To String
+
+
     @Override
     public String toString() {
         return "Driver{" +
-                "DriverId=" + DriverId +
-                ", DeliveryId=" + DeliveryId +
-                ", OrderId=" + OrderId +
+                "DriverId='" + DriverId + '\'' +
+                ", DeliveryId='" + DeliveryId + '\'' +
+                ", OrderId='" + OrderId + '\'' +
                 ", DriverName='" + DriverName + '\'' +
                 '}';
     }
 
     //Builder pattern class
     public static class Builder {
-        private Integer DriverId ;
-        private Integer DeliveryId ;
-        private Integer OrderId ;
+        private String DriverId ;
+        private String DeliveryId ;
+        private String OrderId ;
         private String DriverName;
 
-        public Builder setDriverId(Integer driverId) {
+        public Builder setDriverId(String driverId) {
             DriverId = driverId;
             return this;
         }
 
-        public Builder setDeliveryId(Integer deliveryId) {
+        public Builder setDeliveryId(String deliveryId) {
             DeliveryId = deliveryId;
             return this;
         }
 
-        public Builder setOrderId(Integer orderId) {
+        public Builder setOrderId(String orderId) {
             OrderId = orderId;
             return this;
         }
