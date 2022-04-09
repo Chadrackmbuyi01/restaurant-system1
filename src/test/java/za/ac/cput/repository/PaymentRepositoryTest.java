@@ -42,27 +42,22 @@ public class PaymentRepositoryTest {
     //adding update method
     @Test
     void c_update() {
-
         Payment update = new Payment.Builder().copy(payment).setPaymentId("76").setPayCash("R700.00").setPayCard("R0.00").setPayEft("R0.00")
                 .build();
         System.out.println("Update:"+ update);
-
     }
 
     //adding delete method
     @Test
     void e_delete() {
-
         boolean success = paymentRepository.delete(payment.getPaymentId());
         assertTrue(success);
         System.out.println("Has been deleted :"+ success);
-
     }
 
     //adding get all method
     @Test
     void d_getAll() {
-
         System.out.println( paymentRepository.getAll());
         System.out.println("Show all :");
     }
