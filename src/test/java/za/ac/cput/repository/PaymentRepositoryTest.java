@@ -1,3 +1,10 @@
+/**
+ * PaymentRepositoryTest.java
+ * Payment Repository Test for Payment Repository in Restaurant System
+ * Author: Uwais Ali Rawoot (216217296)
+ * Date: 09 April 2022
+ */
+
 package za.ac.cput.repository;
 
 import org.junit.jupiter.api.MethodOrderer;
@@ -16,6 +23,7 @@ public class PaymentRepositoryTest {
     private static PaymentRepository paymentRepository = PaymentRepository.getPaymentRepository();
     private static Payment payment = PaymentFactory.createPayment("325", "yes", "no", "no");
 
+    //adding create method
     @Test
     void a_create() {
         Payment create = paymentRepository.create(payment);
@@ -23,6 +31,7 @@ public class PaymentRepositoryTest {
         System.out.println("Create: "+ create);
     }
 
+    //adding read method
     @Test
     void b_read() {
         Payment read = paymentRepository.read(payment.getPaymentId());
@@ -30,6 +39,7 @@ public class PaymentRepositoryTest {
         System.out.println("Read:"+ read);
     }
 
+    //adding update method
     @Test
     void c_update() {
 
@@ -39,6 +49,7 @@ public class PaymentRepositoryTest {
 
     }
 
+    //adding delete method
     @Test
     void e_delete() {
 
@@ -48,6 +59,7 @@ public class PaymentRepositoryTest {
 
     }
 
+    //adding get all method
     @Test
     void d_getAll() {
 

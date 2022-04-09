@@ -1,3 +1,10 @@
+/**
+ * PaymentRepository.java
+ * Payment Repository for Restaurant System
+ * Author: Uwais Ali Rawoot (216217296)
+ * Date: 09 April 2022
+ */
+
 package za.ac.cput.repository;
 
 import za.ac.cput.entity.Payment;
@@ -20,6 +27,7 @@ public class PaymentRepository implements IPaymentRepository{
         return paymentRepository;
     }
 
+    //adding create method
     @Override
     public Payment create (Payment paymentId){
         boolean success = paymentDB.add(paymentId);
@@ -28,6 +36,7 @@ public class PaymentRepository implements IPaymentRepository{
         return paymentId;
     }
 
+    //adding read method
     @Override
     public Payment read (String paymentId){
         Payment payment = paymentDB.stream()
@@ -37,6 +46,7 @@ public class PaymentRepository implements IPaymentRepository{
         return payment;
     }
 
+    //adding update method
     @Override
     public Payment update(Payment paymentId){
         Payment oldPaymentId = read(paymentId.getPaymentId());
@@ -48,6 +58,7 @@ public class PaymentRepository implements IPaymentRepository{
         return null;
     }
 
+    //adding delete method
     @Override
     public boolean delete(String paymentId){
         Payment paymentIdToDelete = read((paymentId));
@@ -57,6 +68,7 @@ public class PaymentRepository implements IPaymentRepository{
         return true;
     }
 
+    //adding get all method
     @Override
     public Set<Payment> getAll(){
         return paymentDB;
