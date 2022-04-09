@@ -15,9 +15,9 @@ import java.util.UUID;
 public class DriverFactory {
     public static Driver createDriver(String deliveryId, String orderId, String driverName){
         String driverId = Help.generateId();
-        return new Driver.Builder().setDriverId(Integer.parseInt(driverId))
-                .setDeliveryId(Integer.parseInt(deliveryId))
-                .setOrderId(Integer.parseInt(orderId))
+        return new Driver.Builder().setDriverId(driverId)
+                .setDeliveryId(deliveryId)
+                .setOrderId(orderId)
                 .setDriverName(driverName)
                 .build();
 
