@@ -4,8 +4,7 @@ import za.ac.cput.entity.Owner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class OwnerFactoryTest {
-    //Creating objects
+
     class OwnerFactoryTest {
         @Test
                 public void test(){
@@ -15,4 +14,3 @@ class OwnerFactoryTest {
         }
 
     }
-}
