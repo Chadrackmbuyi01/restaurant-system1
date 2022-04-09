@@ -1,3 +1,16 @@
+
+/*
+DeliveryRepository.java
+Repository class for Delivery entity
+Author : Zubair Esau (217100554)
+Date 07 April 2022
+
+ */
+
+
+
+
+
 package za.ac.cput.repository;
 
 import za.ac.cput.entity.Delivery;
