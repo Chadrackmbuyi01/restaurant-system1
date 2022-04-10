@@ -41,7 +41,7 @@ private static Owner owner= OwnerFactory.createOwner(112345,"Aphiwe");
     void d_delete() {
       boolean success= repos.delete(owner.getOwnerName());
       assertTrue(success);
-        System.out.println("Deleted" + success);
+       System.out.println("Deleted" + success);
     }
 
     @Test
