@@ -16,7 +16,7 @@ public class PaymentFactoryTest {
 
     @Test
     public void test() {
-        Payment payment = PaymentFactory.createPayment("350", "yes", "no", "no");
+        Payment payment = PaymentFactory.createPayment("350", "R395.00", "R0.00", "R0.00");
         assertNotNull(payment);
     }
 }

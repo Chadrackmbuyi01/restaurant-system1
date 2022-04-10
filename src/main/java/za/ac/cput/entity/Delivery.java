@@ -12,55 +12,56 @@ package za.ac.cput.entity;
 
 
 public class Delivery {
-    private Integer DeliveryId ;
-    private Integer OrderId ;
+    private String DeliveryId ;
+    private String OrderId ;
 
     // private constructor
     private Delivery (Builder builder){
+        super();
         this.DeliveryId = builder.DeliveryId;
         this.OrderId = builder.OrderId;
     }
 
 
     //Getters and setters
-
-
-    public Integer getDeliveryId() {
+    public String getDeliveryId() {
         return DeliveryId;
     }
 
-    public void setDeliveryId(Integer deliveryId) {
+    public void setDeliveryId(String deliveryId) {
         DeliveryId = deliveryId;
     }
 
-    public Integer getOrderId() {
+    public String getOrderId() {
         return OrderId;
     }
 
-    public void setOrderId(Integer orderId) {
+    public void setOrderId(String orderId) {
         OrderId = orderId;
     }
+
+    //toString
+
 
     @Override
     public String toString() {
         return "Delivery{" +
-                "DeliveryId=" + DeliveryId +
-                ", OrderId=" + OrderId +
+                "DeliveryId='" + DeliveryId + '\'' +
+                ", OrderId='" + OrderId + '\'' +
                 '}';
     }
 
     //Builder pattern class
     public static class Builder{
-        private Integer DeliveryId ;
-        private Integer OrderId ;
+        private String DeliveryId ;
+        private String OrderId ;
 
-
-        public Builder setDeliveryId(Integer deliveryId) {
+        public Builder setDeliveryId(String deliveryId) {
             DeliveryId = deliveryId;
             return this;
         }
 
-        public Builder setOrderId(Integer orderId) {
+        public Builder setOrderId(String orderId) {
             OrderId = orderId;
             return this;
         }
@@ -76,6 +77,9 @@ public class Delivery {
         }
 
     }
+
+
+
 
 }
 

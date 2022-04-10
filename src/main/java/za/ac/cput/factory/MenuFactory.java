@@ -11,7 +11,7 @@ import za.ac.cput.entity.Menu;
 
 public class MenuFactory {
     public static Menu createMenu(String menuId, String menuItem) {
-        return new Menu.Builder().setMenuId(Integer.parseInt(menuId))
+        return new Menu.Builder().setMenuId(menuId)
                 .setMenuItem(menuItem)
                 .build();
     }
