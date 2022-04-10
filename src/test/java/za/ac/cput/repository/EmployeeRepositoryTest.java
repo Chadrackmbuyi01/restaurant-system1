@@ -1,3 +1,8 @@
+/* EmployeeRepositoryTest.java
+   Employee Repository Test class for Restaurant management system
+   Author: Chadrack Mbuyi Kalala (219013012)
+   Date: 08 April 2022
+ */
 package za.ac.cput.repository;
 
 import org.junit.jupiter.api.MethodOrderer;

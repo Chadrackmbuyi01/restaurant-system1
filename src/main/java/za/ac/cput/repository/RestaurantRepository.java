@@ -1,5 +1,6 @@
 package za.ac.cput.repository;
 
+import org.jetbrains.annotations.NotNull;
 import za.ac.cput.entity.Employee;
 import za.ac.cput.entity.Restaurant;
 
@@ -14,7 +15,7 @@ public class RestaurantRepository implements IRestaurantRepository{
         restaurantDataBase = new HashSet<Restaurant>();
     }
 
-    public static RestaurantRepository getRepository(){
+    public static RestaurantRepository getRepo(){
         if(repo == null){
             repo = new RestaurantRepository();
         }
