@@ -6,15 +6,18 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.entity.Employee;
+import za.ac.cput.util.Helper;
 
 public class EmployeeFactory {
 
-    public static Employee createEmployee(int empId, String empFname, String empLname, String empAddress){
-                    return new Employee.Builder().setEmpId(empId)
+    public static Employee createEmployee(String empFname, String empLname, String empAddress){
+                    String employeeId = Helper.generatedId();
+                    Employee employee = new Employee.Builder().setEmpNumber(employeeId)
                             .setEmpFname(empFname)
                             .setEmpLname(empLname)
                             .setEmpAddress(empAddress)
                             .build();
+                    return employee;
 
     }
 }

@@ -15,7 +15,7 @@ class EmployeeFactoryTest {
     @Test
     public void test(){
 
-        Employee employee = EmployeeFactory.createEmployee(103, "Chadrack", "Kalala", "3 2nd Avenue, Rondebosch East");
+        Employee employee = EmployeeFactory.createEmployee("Chadrack", "Kalala", "3 2nd Avenue, Rondebosch East");
         assertNotNull(employee);
 
     }

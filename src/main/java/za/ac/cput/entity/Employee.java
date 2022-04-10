@@ -6,7 +6,7 @@
 package za.ac.cput.entity;
 
 public class Employee {
-    private int empId;
+    private String empNumber;
     private String empFname;
     private String empLname;
     private String empAddress;
@@ -18,7 +18,7 @@ public class Employee {
     // private constructor required
     private Employee(Builder builder){
         // private
-        this.empId = builder.empId;
+        this.empNumber = builder.empNumber;
         this.empFname = builder.empFname;
         this.empLname = builder.empLname;
         this.empAddress = builder.empAddress;
@@ -27,12 +27,12 @@ public class Employee {
     }
 
 
-    public int getEmpId() {
-        return empId;
+    public String getEmpNumber() {
+        return empNumber;
     }
 
-    public void setEmpId(int empId) {
-        this.empId = empId;
+    public void setEmpNumber(String empNumber) {
+        this.empNumber = empNumber;
     }
 
     public String getEmpFname() {
@@ -62,7 +62,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "empId=" + empId +
+                "empId=" + empNumber +
                 ", empFname='" + empFname + '\'' +
                 ", empLname='" + empLname + '\'' +
                 ", empAddress='" + empAddress + '\'' +
@@ -71,13 +71,13 @@ public class Employee {
 
     public static class Builder{
 
-        private int empId;
+        private String empNumber;
         private String empFname;
         private String empLname;
         private String empAddress;
 
-        public Builder setEmpId(int empId) {
-            this.empId = empId;
+        public Builder setEmpNumber(String empNumber) {
+            this.empNumber = empNumber;
             return this;
         }
 
@@ -98,7 +98,7 @@ public class Employee {
 
         public Builder copy(Employee employee){
 
-            this.empId = employee.empId;
+            this.empNumber = employee.empNumber;
             this.empFname = employee.empFname;
             this.empLname = employee.empLname;
             this.empAddress = employee.empAddress;

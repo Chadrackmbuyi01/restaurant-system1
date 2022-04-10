@@ -4,7 +4,7 @@ import za.ac.cput.entity.Employee;
 
 import java.util.Set;
 
-public interface IEmployeeRepository extends IRepository<Employee, Integer> {
+public interface IEmployeeRepository extends IRepository<Employee, String> {
     // The interface of the Employee Repo where I will define create, read, update and delete methods
 
     public Set<Employee> getAll();
