@@ -9,7 +9,7 @@ package za.ac.cput.entity;
 
 public class Menu {
 
-    private int menuId;
+    private String menuId;
     private String menuItem;
 
     //private constructor
@@ -19,7 +19,7 @@ public class Menu {
     }
 
     //Getters
-    public int getMenuId() {
+    public String getMenuId() {
         return menuId;
     }
 
@@ -28,7 +28,7 @@ public class Menu {
     }
 
     //Setters
-    public void setMenuId(int menuId) {
+    public void setMenuId(String menuId) {
         this.menuId = menuId;
     }
 
@@ -47,10 +47,10 @@ public class Menu {
 
     //Builder Pattern Class
     public static class Builder {
-        private int menuId;
+        private String menuId;
         private String menuItem;
 
-        public Builder setMenuId(int menuId) {
+        public Builder setMenuId(String menuId) {
             this.menuId = menuId;
             return this;
         }

@@ -9,7 +9,7 @@ package za.ac.cput.entity;
 
 public class Payment {
 
-    private int paymentId;
+    private String paymentId;
     private String payCash;
     private String payCard;
     private String payEft;
@@ -24,7 +24,7 @@ public class Payment {
 
     //Getters
 
-    public int getPaymentId() {
+    public String getPaymentId() {
         return paymentId;
     }
 
@@ -41,7 +41,7 @@ public class Payment {
     }
 
     //Setters
-    public void setPaymentId(int paymentId) {
+    public void setPaymentId(String paymentId) {
         this.paymentId = paymentId;
     }
 
@@ -71,12 +71,12 @@ public class Payment {
     //Builder Pattern Class
 
     public static class Builder {
-        private int paymentId;
+        private String paymentId;
         private String payCash;
         private String payCard;
         private String payEft;
 
-        public Builder setPaymentId(int paymentId) {
+        public Builder setPaymentId(String paymentId) {
             this.paymentId = paymentId;
             return this;
         }
