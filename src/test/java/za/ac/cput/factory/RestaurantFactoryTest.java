@@ -15,8 +15,9 @@ class RestaurantFactoryTest {
     @Test
     public void test() {
 
-        Restaurant restaurant = RestaurantFactory.createRestaurant(1001545,"Slug and Lettuce", " Liesbeek Parkway 625, Observatory");
+        Restaurant restaurant = RestaurantFactory.createRestaurant("Slug and Lettuce","Liesbeek Parkway 625, Observatory");
         assertNotNull(restaurant);
+        System.out.println(restaurant);
 
     }
 }

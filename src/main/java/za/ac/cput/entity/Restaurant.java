@@ -6,25 +6,25 @@
 package za.ac.cput.entity;
 
 public class Restaurant {
-    private int restId;
+    private String restRegNumber;
     private String restName;
     private String restAddress;
 
     // private constructor required
     private Restaurant (Builder builder){
-        this.restId = builder.restId;
+        this.restRegNumber = builder.restRegNumber;
         this.restName = builder.restName;
         this.restAddress = builder.restAddress;
 
     }
 
 
-    public int getRestId() {
-        return restId;
+    public String getRestRegNumber() {
+        return restRegNumber;
     }
 
-    public void setRestId(int restId) {
-        this.restId = restId;
+    public void setRestRegNumber(String restRegNumber) {
+        this.restRegNumber = restRegNumber;
     }
 
     public String getRestName() {
@@ -46,7 +46,7 @@ public class Restaurant {
     @Override
     public String toString() {
         return "Restaurant{" +
-                "restId=" + restId +
+                "restRegNumber=" + restRegNumber +
                 ", restName='" + restName + '\'' +
                 ", restAddress='" + restAddress + '\'' +
                 '}';
@@ -54,12 +54,12 @@ public class Restaurant {
 
     public static class Builder{
 
-        private int restId;
+        private String restRegNumber;
         private String restName;
         private String restAddress;
 
-        public Builder setRestId(int restId) {
-            this.restId = restId;
+        public Builder setRestRegNumber(String restId) {
+            this.restRegNumber = restId;
             return this;
         }
 
@@ -74,7 +74,7 @@ public class Restaurant {
         }
 
         public Builder copy(Restaurant restaurant){
-            this.restId = restaurant.restId;
+            this.restRegNumber = restaurant.restRegNumber;
             this.restName = restaurant.restName;
             this.restAddress = restaurant.restAddress;
             return this;

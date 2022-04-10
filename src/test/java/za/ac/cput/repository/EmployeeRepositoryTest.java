@@ -16,30 +16,43 @@ class EmployeeRepositoryTest {
 
     @Test
     void a_create(){
-        Employee empCreated = repository.create(employee);
-        assertEquals(employee.getEmpNumber(), empCreated.getEmpNumber());
-        System.out.println("Create: " + empCreated);
+        Employee created = repository.create(employee);
+        assertEquals(employee.getEmpNumber(), created.getEmpNumber());
+        System.out.println("Create: " + created);
 
     }
 
     @Test
     void b_read(){
-
+        Employee read = repository.read(employee.getEmpNumber());
+        assertNotNull(read);
+        System.out.println("Read: " + read);
 
     }
 
     @Test
     void c_update(){
+        Employee updated = new Employee.Builder().copy(employee).setEmpFname("Arthur")
+                .setEmpLname("Mlambo")
+                .setEmpAddress("227 Main Road, Wynberg")
+                .build();
+        assertNotNull(repository.update(updated));
+        System.out.println("Updated: " + updated);
 
     }
 
     @Test
     void e_delete(){
+        boolean success = repository.delete(employee.getEmpNumber());
+        assertTrue(success);
+        System.out.println("Deleted: " + success);
 
     }
 
     @Test
     void d_getAll(){
+        System.out.println("Show all: ");
+        System.out.println(repository.getAll());
 
     }
 

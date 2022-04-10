@@ -56,7 +56,7 @@ public class EmployeeRepository implements IEmployeeRepository{
         if (employeeToDelete == null)
             return false;
         employeeDataBase.remove(employeeToDelete);
-        return false;
+        return true;
     }
 
     @Override

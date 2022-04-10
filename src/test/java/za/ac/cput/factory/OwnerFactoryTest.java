@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OwnerFactoryTest {
     //Creating objects
-    class OwnerFactoryTest {
         @Test
                 public void test(){
 
@@ -14,5 +13,4 @@ class OwnerFactoryTest {
             assertNotNull(owner);
         }
 
-    }
 }

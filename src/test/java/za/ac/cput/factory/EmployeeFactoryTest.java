@@ -17,6 +17,7 @@ class EmployeeFactoryTest {
 
         Employee employee = EmployeeFactory.createEmployee("Chadrack", "Kalala", "3 2nd Avenue, Rondebosch East");
         assertNotNull(employee);
+        System.out.println(employee);
 
     }
 
