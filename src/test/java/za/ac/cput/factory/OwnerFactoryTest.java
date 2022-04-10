@@ -4,11 +4,10 @@ import za.ac.cput.entity.Owner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
-    //Creating objects
-    class OwnerFactoryTest {
+//Creating objects
+class OwnerFactoryTest {
         @Test
-                public void test(){
+        public void test(){
 
             Owner owner =OwnerFactory.createOwner(9425628,"Aphiwe");
             assertNotNull(owner);

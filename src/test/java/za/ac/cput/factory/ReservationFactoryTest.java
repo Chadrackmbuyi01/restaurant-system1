@@ -1,3 +1,10 @@
+/*
+ *ReservationFactoryTest.java
+ * VuyolwethuKalolo
+ * 214015637
+ * 06-04-2022
+ */
+
 package za.ac.cput.factory;
 
 
@@ -15,6 +22,7 @@ class ReservationFactoryTest {
 
         Reservation reservation = ReservationFactory.createReservation(9425628, "Aphiwe");
         assertNotNull(reservation);
+
     }
 }
 
