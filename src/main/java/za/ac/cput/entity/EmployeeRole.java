@@ -1,5 +1,5 @@
 /* EmployeeRole.java
-   Entity for EmployeeRole
+   Entity EmployeeRole for Restaurant system
    Author: Marcia Zanele Bika (211054356)
    Date: 03 April 2022
  */

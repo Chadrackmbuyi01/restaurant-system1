@@ -9,9 +9,9 @@ package za.ac.cput.entity;
 
 
 public class Driver {
-    private int DriverId ;
-    private int DeliveryId ;
-    private int OrderId ;
+    private Integer DriverId ;
+    private Integer DeliveryId ;
+    private Integer OrderId ;
     private String DriverName;
 
     //private constructor
@@ -25,27 +25,27 @@ public class Driver {
     // Getters and setters
 
 
-    public int getDriverId() {
+    public Integer getDriverId() {
         return DriverId;
     }
 
-    public void setDriverId(int driverId) {
+    public void setDriverId(Integer driverId) {
         DriverId = driverId;
     }
 
-    public int getDeliveryId() {
+    public Integer getDeliveryId() {
         return DeliveryId;
     }
 
-    public void setDeliveryId(int deliveryId) {
+    public void setDeliveryId(Integer deliveryId) {
         DeliveryId = deliveryId;
     }
 
-    public int getOrderId() {
+    public Integer getOrderId() {
         return OrderId;
     }
 
-    public void setOrderId(int orderId) {
+    public void setOrderId(Integer orderId) {
         OrderId = orderId;
     }
 
@@ -69,23 +69,23 @@ public class Driver {
 
     //Builder pattern class
     public static class Builder {
-        private int DriverId ;
-        private int DeliveryId ;
-        private int OrderId ;
+        private Integer DriverId ;
+        private Integer DeliveryId ;
+        private Integer OrderId ;
         private String DriverName;
 
-        public Builder setDriverId(int driverId) {
-            this.DriverId = driverId;
+        public Builder setDriverId(Integer driverId) {
+            DriverId = driverId;
             return this;
         }
 
-        public Builder setDeliveryId(int deliveryId) {
-            this.DeliveryId = deliveryId;
+        public Builder setDeliveryId(Integer deliveryId) {
+            DeliveryId = deliveryId;
             return this;
         }
 
-        public Builder setOrderId(int orderId) {
-            this.OrderId = orderId;
+        public Builder setOrderId(Integer orderId) {
+            OrderId = orderId;
             return this;
         }
 
