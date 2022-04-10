@@ -40,16 +40,26 @@ public class RestaurantRepository implements IRestaurantRepository{
 
     @Override
     public Restaurant update(Restaurant restaurant) {
+        Restaurant oldRestaurant = read(restaurant.getRestRegNumber());
+        if (oldRestaurant != null){
+            restaurantDataBase.remove(oldRestaurant);
+            restaurantDataBase.add(restaurant);
+            return restaurant;
+        }
         return null;
     }
 
     @Override
-    public boolean delete(String s) {
-        return false;
+    public boolean delete(String restId) {
+        Restaurant restaurantToDelete = read(restId);
+        if (restaurantToDelete == null)
+            return false;
+        restaurantDataBase.remove(restaurantToDelete);
+        return true;
     }
 
     @Override
     public Set<Restaurant> getAll() {
-        return null;
+        return restaurantDataBase;
     }
 }
