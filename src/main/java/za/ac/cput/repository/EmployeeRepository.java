@@ -1,3 +1,8 @@
+/* EmployeeRepository.java
+   Employee Repository class for Restaurant management system
+   Author: Chadrack Mbuyi Kalala (219013012)
+   Date: 08 April 2022
+ */
 package za.ac.cput.repository;
 
 import za.ac.cput.entity.Employee;
