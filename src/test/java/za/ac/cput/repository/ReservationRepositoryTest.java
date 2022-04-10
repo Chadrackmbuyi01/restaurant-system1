@@ -41,7 +41,7 @@ class ReservationRepositoryTest {
     void d_delete() {
         boolean success= repos.delete(reservation.getReserveName());
         assertTrue(success);
-        System.out.println("Deleted" + success);
+       System.out.println("Deleted" + success);
     }
 
     @Test
