@@ -9,8 +9,13 @@ class OwnerFactoryTest {
         @Test
         public void test(){
 
-            Owner owner =OwnerFactory.createOwner(9425628,"Aphiwe");
+            Owner owner =OwnerFactory.createOwner(9425628,"John");
             assertNotNull(owner);
         }
+    @Test
+    void testEquality(){
+
+
+    }
 
     }
