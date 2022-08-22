@@ -5,7 +5,6 @@
  */
 package za.ac.cput.repository;
 
-import org.jetbrains.annotations.NotNull;
 import za.ac.cput.entity.Employee;
 import za.ac.cput.entity.Restaurant;
 

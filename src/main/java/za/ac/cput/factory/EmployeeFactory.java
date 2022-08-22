@@ -7,11 +7,12 @@ package za.ac.cput.factory;
 
 import za.ac.cput.entity.Employee;
 import za.ac.cput.util.Helper;
+import za.ac.cput.util.StringHelper;
 
 public class EmployeeFactory {
 
     public static Employee createEmployee(String empFname, String empLname, String empAddress){
-                    String employeeId = Helper.generatedId();
+                    String employeeId = StringHelper.generateId();
                     Employee employee = new Employee.Builder().setEmpNumber(employeeId)
                             .setEmpFname(empFname)
                             .setEmpLname(empLname)

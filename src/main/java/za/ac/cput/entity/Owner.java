@@ -6,7 +6,7 @@ package za.ac.cput.entity;
  * 06-04-2022
  */
 
-import org.jetbrains.annotations.Contract;
+//import org.jetbrains.annotations.Contract;
 
 public class Owner {
 
@@ -16,7 +16,7 @@ public class Owner {
 
     //Construtor
 
-    @Contract(pure = true)
+    //@Contract(pure = true)
     private Owner(Builder builder) {
         this.ownerId = builder.ownerId;
         this. ownerName= builder.ownerName;

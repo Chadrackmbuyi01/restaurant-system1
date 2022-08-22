@@ -8,11 +8,12 @@ package za.ac.cput.factory;
 import za.ac.cput.entity.Employee;
 import za.ac.cput.entity.Restaurant;
 import za.ac.cput.util.Helper;
+import za.ac.cput.util.StringHelper;
 
 public class RestaurantFactory {
 
     public static Restaurant createRestaurant(String restName, String restAddress) {
-        String restId = Helper.generatedId();
+        String restId = StringHelper.generateId();
         Restaurant restaurant = new Restaurant.Builder().setRestRegNumber(restId)
                 .setRestName(restName)
                 .setRestAddress(restAddress)

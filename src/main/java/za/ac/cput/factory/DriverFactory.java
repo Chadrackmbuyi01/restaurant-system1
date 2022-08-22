@@ -14,7 +14,7 @@ import java.util.UUID;
 
 public class DriverFactory {
     public static Driver createDriver(String deliveryId, String orderId, String driverName){
-        String driverId = Help.generateId();
+        String driverId = Helper.generateId();
         return new Driver.Builder().setDriverId(driverId)
                 .setDeliveryId(deliveryId)
                 .setOrderId(orderId)
@@ -25,7 +25,7 @@ public class DriverFactory {
     }
 
 
-    public class Help{
+    public static class Helper{
         public static String generateId(){return UUID.randomUUID().toString();}
     }
 
