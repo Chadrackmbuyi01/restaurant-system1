@@ -1,4 +1,4 @@
-package za.ac.cput.myJDBC;
+package za.ac.cput;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
