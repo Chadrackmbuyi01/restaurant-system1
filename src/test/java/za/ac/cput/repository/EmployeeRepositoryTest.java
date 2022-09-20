@@ -22,14 +22,14 @@ class EmployeeRepositoryTest {
     @Test
     void a_create(){
         Employee created = repository.create(employee);
-        assertEquals(employee.getEmpNumber(), created.getEmpNumber());
+        assertEquals(employee.getEmpId(), created.getEmpId());
         System.out.println("Create: " + created);
 
     }
 
     @Test
     void b_read(){
-        Employee read = repository.read(employee.getEmpNumber());
+        Employee read = repository.read(employee.getEmpId());
         assertNotNull(read);
         System.out.println("Read: " + read);
 
@@ -48,7 +48,7 @@ class EmployeeRepositoryTest {
 
     @Test
     void e_delete(){
-        boolean success = repository.delete(employee.getEmpNumber());
+        boolean success = repository.delete(employee.getEmpId());
         assertTrue(success);
         System.out.println("Deleted: " + success);
 

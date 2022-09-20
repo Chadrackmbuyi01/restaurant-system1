@@ -1,11 +1,12 @@
-package za.ac.cput;
+package za.ac.cput.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class Configuration {
-    public static void main(String[] args) {
+public class Config_Database {
+
+    private static void config(){
 
         try {
 
@@ -16,6 +17,5 @@ public class Configuration {
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }

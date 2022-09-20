@@ -38,7 +38,7 @@ public class EmployeeRepository implements IEmployeeRepository{
     public Employee read(String empId) {
 
         Employee employee = employeeDataBase.stream()
-                .filter(em -> em.getEmpNumber().equals(empId))
+                .filter(em -> em.getEmpId().equals(empId))
                 .findAny()
                 .orElse(null);
         return employee;
@@ -46,7 +46,7 @@ public class EmployeeRepository implements IEmployeeRepository{
 
     @Override
     public Employee update(Employee employee) {
-        Employee oldEmployee = read(employee.getEmpNumber());
+        Employee oldEmployee = read(employee.getEmpId());
         if (oldEmployee != null) {
             employeeDataBase.remove(oldEmployee);
             employeeDataBase.add(employee);

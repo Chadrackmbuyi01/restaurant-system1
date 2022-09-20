@@ -1,11 +1,11 @@
 package za.ac.cput.service;
 
-import java.util.Optional;
+import za.ac.cput.entity.Employee;
 
 public interface IService <T, ID>{
     T create(T t);
-    Optional<T> read(ID id);
+    T read(ID id);
     T update(T t);
-    void delete(T t);
+    boolean delete(ID id);
 
 }
